@@ -203,15 +203,11 @@ def run(train, Agent, env):
 
             state = next_state
             score += reward
-            if done or j==999:
+            if done:
                 all_rewards.append(score)
                 reward_windows.append(score)
                 epsilon = max(epsilon * epsilon_decay, epsilon_minium)
                 score = 0
-                if j == 999:
-                    dc += 0
-                dc += 1
-                break
 
             if len(Agent.exp_replay) > Agent.batch_size:
                 mem = Agent.exp_replay.sample(Agent.batch_size)
