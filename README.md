@@ -1,6 +1,7 @@
 # CSC 521, A Comparative Study On reinforcement Algorithms 
 
 ![alt text](https://i.imgur.com/BqxkiRo.gif)
+- This was my final senior year project where I implemented four different algorithms, in the mario enviroment.
 
 
 # The Algorithms
